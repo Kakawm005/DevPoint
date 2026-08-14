@@ -1,0 +1,46 @@
+body {
+    background-color: #050B12;
+    color: #94A3B8;
+}
+
+header {
+    background-color: #05112e;
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main {
+    color: #F8FAFC;
+    text-align: center;
+}
+
+.cabecalho {
+    margin: 27px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.cab_right {
+    text-align: right;
+    margin: 27px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.logo {
+    width: 135px;
+    height: 35px;
+    object-fit: cover;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #17213a;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
