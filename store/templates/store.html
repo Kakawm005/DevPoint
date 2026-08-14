@@ -1,8 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Loja</h1>
-{% if product %}
-<div>deu certo</div>
+{% if products %}
+    <div class="product-grid">
+    {% for product in products %}
+        <div class="product-card">
+            {{ product.name }}
+        </div>
+    {% endfor %}
+    </div>
 {% else %}
 <div>Nenhum produto encontrado</div>
 {% endif %}
