@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.category }}
+    {{ form.name }}
+    {{ form.price }}
+    {{ form.bio }}
+    {{ form.stock }}
+    {{ form.photo }}
+    <button type="submit">Criar Anuncio</button>
+</form>
+{% endblock %}

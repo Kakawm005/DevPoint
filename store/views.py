@@ -15,7 +15,7 @@ class StoreView(ListView):
 
 
 class NewProductView(CreateView):
-    template_name = 'sell.html'
+    template_name = 'new_product.html'
     model = Product
     form_class = NewProductForm
     success_url = reverse_lazy('store')
