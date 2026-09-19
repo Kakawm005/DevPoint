@@ -8,13 +8,16 @@
 {% if products %}
     <div class="product-grid">
     {% for product in products %}
-        <div class="product-card">
-            {% if product.photo %}
-            <img src="{{ product.photo.url }}" alt="{{ product.name }}">
-            {% endif %}
-            <h2>{{ product.category }} {{ product.name }}</h2>
-            <div></div>
-        </div>
+        <a href="{% url 'detail' product.id %}">
+            <div class="product-card">
+                {% if product.photo %}
+                <img src="{{ product.photo.url }}" alt="{{ product.name }}">
+                {% endif %}
+                <h2>{{ product.category }} {{ product.name }}</h2>
+                <div></div>
+            </div>
+        </a>
+
     {% endfor %}
     </div>
 {% else %}
